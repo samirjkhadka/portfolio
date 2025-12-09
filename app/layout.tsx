@@ -7,6 +7,7 @@ import ActiveSectionContextProvider from "@/context/active-section-context";
 import { Toaster } from "react-hot-toast";
 
 import ThemeSwitch from "@/components/theme-switch";
+import Footer from "@/components/footer";
 
 const geistSans = Nunito({
   variable: "--font-geist-sans",
@@ -39,6 +40,7 @@ export default function RootLayout({
           <ActiveSectionContextProvider>
             <Header />
             {children}
+            <Footer />
             <Toaster position="top-right" />
             <ThemeSwitch />
           </ActiveSectionContextProvider>
