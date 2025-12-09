@@ -8,7 +8,7 @@ const About = () => {
       className="mb-28 max-w-180 text-center leading-8 sm:mb-40"
     >
       <SectionHeading> About Me </SectionHeading>
-      <h2 className="text-3xl font-medium capitalize mb-8">About Me</h2>
+
       <p className="text-center mb-3">
         I am a frontend developer with a passion for creating intuitive and
         user-friendly interfaces. I specialize in HTML, CSS, and JavaScript, and
