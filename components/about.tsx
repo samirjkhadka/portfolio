@@ -1,11 +1,18 @@
-import React from "react";
+"use client";
+import { motion } from "framer-motion";
 import SectionHeading from "./sectionHeading";
+import { useSectionInView } from "@/lib/hooks";
 
 const About = () => {
+  const { ref } = useSectionInView("About");
   return (
-    <section
+    <motion.section
       id="about"
-      className="mb-28 max-w-180 text-center leading-8 sm:mb-40"
+      ref={ref}
+      initial={{ opacity: 0, y: 100 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ delay: 0.175 }}
+      className="mb-28 max-w-180 text-center leading-8 sm:mb-40 scroll-mt-28"
     >
       <SectionHeading> About Me </SectionHeading>
 
@@ -22,7 +29,7 @@ const About = () => {
         when I&apos;m not coding, I enjoy playing video games, watching movies,
         and listening to music.
       </p>
-    </section>
+    </motion.section>
   );
 };
 
