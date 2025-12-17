@@ -59,11 +59,34 @@ const Intro = () => {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hello, I&apos;m Samir.</span> I&apos;m a{" "}
-        <span className="font-bold">Principal Project Manager</span> and{" "}
-        <span className="font-bold">UI/UX Designer</span> with
-        <span className="font-bold"> 4 years +</span> of experience. Currently
-        based in Kathmandu.
+        <span className="font-bold">Namaste, I&apos;m Samir J Khadka.</span>{" "}
+        <br />
+        <span className="font-bold text-xl">
+          Product Leader & Builder | Principal Project Manager | UI/UX Designer{" "}
+          <br />
+          Fintech | Travel Tech
+          <br />
+        </span>
+        <span className="text-xl">
+          Former Principal Project Manager at a regulated Payment Service
+          Provider in Nepal, where I led the end to end development of mobile
+          wallets, payment gateways, and APIs that drove financial inclusion
+          across urban and rural communities.
+        </span>
+        <br />
+        <span className=" text-xl">
+          Currently bootstrapping{" "}
+          <strong>
+            <a href="https://www.nepalihomestaybooking.com" target="_blank">Nepali Homestays</a>
+          </strong>{" "}
+          - the marketplace connecting travelers with authentic local hosts -
+          while shipping AI-powered travel tools and mobile experiences.
+        </span>
+        <br />
+        <span className="font-bold text-xl">
+          {" "}
+          Based in Kathmandu | Full-stack capable | AI-native PM{" "}
+        </span>
       </motion.p>
       <motion.div
         className="flex items-center justify-center gap-2 px-4 text-lg font-medium sm:flex-row"
